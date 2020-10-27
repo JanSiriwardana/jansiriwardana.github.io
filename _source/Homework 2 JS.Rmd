@@ -1,0 +1,222 @@
+---
+title: "Homework 2"
+author: "Janithe Siriwardana"
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Setup
+
+Set working directory and activate necessary packages:
+
+```{r setup 2}
+setwd("~/tmp/jansiriwardana.github.io")
+library(ggplot2)
+library(stargazer)
+library(data.table)
+```
+
+## Data Analysis
+
+Start by loading the data set and converting it to the data.table format:
+
+```{r data analyis}
+load("datasets/ceosal2.RData")
+dt.ceo.salaries <- data.table(data)
+rm(data)
+```
+
+### Descriptive Statistics
+
+**How many CEOs are in the sample?**
+
+```{r CEO sample}
+nrow(dt.ceo.salaries)
+```
+**How many CEOs have a graduate degree?**
+
+```{r CEO grad}
+dt.ceo.salaries[, sum(grad)]
+```
+
+Alternatively, count the number of rows in which grad = 1
+
+```{r CEO grad 2}
+nrow(dt.ceo.salaries[grad==1,])
+```
+
+**What is the percentage of CEOs with graduate degrees?**
+
+```{r CEO grad pct}
+dt.ceo.salaries[, sum(grad)]/nrow(dt.ceo.salaries)
+```
+
+Or the mean of grad:
+
+```{r CEO grad pct 2}
+dt.ceo.salaries[, mean(grad)]
+```
+
+**What is the average CEO salary?**
+
+```{r CEO av sal}
+dt.ceo.salaries[, mean(salary)]
+```
+
+Alternatively:
+
+```{r CEO av sal 2}
+mean(dt.ceo.salaries[, salary])
+```
+
+**What is the mean CEO salary for those with a graduate degree?**
+
+```{r CEO av sal grad}
+dt.ceo.salaries[grad==1, mean(salary)]
+```
+
+**What is the mean CEO salary for those without a graduate degree?**
+
+```{r CEO av sal non-grad}
+dt.ceo.salaries[grad==0, mean(salary)]
+```
+
+**How many CEOs have/don't have a college degree?**
+
+```{r CEO w deg}
+dt.ceo.salaries[, list(n_ceo=.N), by = college]
+```
+
+**Can we say that the mean salary is statistically different from 800?**
+
+```{r mean salary dif from 800}
+t.test(dt.ceo.salaries[, salary], mu = 800)
+```
+
+P-value = 0.1377 > 0.05 so we cannot reject the null hypothesis that the population mean is 800. Additionally, 800 is within the 95% confidence interval.
+
+**Is the average salary different for CEOs with a graduate degree and those without?**
+
+```{r mean salary dif for grad 1}
+t.test(dt.ceo.salaries[, salary] ~ dt.ceo.salaries[, grad])
+```
+
+Alternatively:
+
+```{r mean salary dif for grad 2}
+dt.ceo.salaries[ , t.test (salary ~ grad)]
+```
+
+Alternatively:
+
+```{r mean salary dif for grad 3}
+t.test(dt.ceo.salaries[grad==0, salary] , dt.ceo.salaries[grad==1, salary])
+```
+
+P-value = 0.969 > 0.05 so we cannot reject the null hypothesis that the population means are the same. Additionally, 0 is within the 95% confidence interval.
+
+**Create a table with descriptive statistics**
+
+```{r table 1}
+dt.ceo.salaries[, list( mean_salary = mean(salary)
+                        , sd_salary = sd(salary)
+                        , min_salary = min(salary)
+                        , max_salary = max(salary)
+                        , median_salary = median(salary))]
+```
+
+You can also compute the summary statistics for different groups:
+
+```{r table 2}
+dt.ceo.salaries[, list( mean_salary = mean(salary)
+                        , sd_salary = sd(salary)
+                        , min_salary = min(salary)
+                        , max_salary = max(salary)), by = list(grad, college)]
+```
+
+Alternatively, you can use the stargazer function to get summary statistics for all variables in the data set:
+
+```{r stargazer 1}
+stargazer(dt.ceo.salaries, type = "text")
+```
+
+You can also get summary statistics for a subset of observations and for a specific list of variables:
+
+```{r stargazer 2}
+stargazer(dt.ceo.salaries[grad==1, list(age, salary)], type="text")
+```
+
+## Quick plots
+
+### Histogram
+
+**Salary**
+
+```{r hist sal}
+qplot( data = dt.ceo.salaries
+       , x = salary
+       , geom = "histogram")
+```
+
+**Age**
+
+```{r hist age}
+qplot( data = dt.ceo.salaries
+       , x = age
+       , geom = "histogram")
+```
+
+### Scatterplot
+
+```{r scatter}
+qplot( data = dt.ceo.salaries
+       , x = sales
+       , y = profits
+       , geom = "point")
+```
+
+### Barplot
+
+```{r bar}
+qplot( data = dt.ceo.salaries
+       , x = factor(grad)
+       , geom = "bar")
+```
+
+### Line
+
+```{r line}
+qplot( data = dt.ceo.salaries
+       , x = sales
+       , y = profits
+       , geom = "line")
+```
+
+### Facet Wrap
+
+```{r facet wrap}
+qplot( data = dt.ceo.salaries
+       , x = salary
+       , geom = "histogram") + facet_wrap(~ grad)
+```
+
+### Customising plots:
+
+**Salary**
+
+```{r custom sal}
+qplot( data = dt.ceo.salaries
+       , x = salary
+       , geom = "histogram"
+       , fill = factor(grad, levels = c(0,1), labels = c("Yes", "No"))) +
+  theme_bw() +
+  ylim(0,50) +
+  xlim(0, 4000) +
+  labs( title = "MY PLOT", x = "CEO Salary", y = "Number of CEOs", fill = "Grad. Degree")
+```
+
+
+
