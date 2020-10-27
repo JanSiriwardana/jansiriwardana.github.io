@@ -369,4 +369,4 @@ qplot( data = dt.ceo.salaries
 
     ## Warning: Removed 4 rows containing missing values (geom_bar).
 
-![](Homework-2-JS_files/figure-gfm/custom%20sal-1.png)<!-- -->
+![](https://github.com/JanSiriwardana/jansiriwardana.github.io/_posts/figure-gfm/custom sal-1.png)<!-- -->
