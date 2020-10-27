@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "Econometrics Lab 2"
 date:   2020-10-27 17:14:44 +0000
 categories: jekyll update
 ---
