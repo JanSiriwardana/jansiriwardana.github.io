@@ -313,7 +313,7 @@ qplot( data = dt.ceo.salaries
        , geom = "point")
 ```
 
-![](Homework-2-JS_files/figure-gfm/scatter-1.png)<!-- -->
+![Scatter](scatter-1.png)
 
 ### Barplot
 
