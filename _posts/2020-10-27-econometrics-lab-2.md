@@ -313,7 +313,7 @@ qplot( data = dt.ceo.salaries
        , geom = "point")
 ```
 
-![Scatter](scatter-1.png)
+![Scatter](https://user-images.githubusercontent.com/73550706/97407746-07170200-18f3-11eb-96cd-026aaa378b36.png)
 
 ### Barplot
 
