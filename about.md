@@ -1,18 +1,8 @@
 ---
-layout: page
 title: About
 permalink: /about/
 ---
 
-Under Construction
+<p class="heavy-title"><a href="http://github.com/thinker3197/Ink">Ink</a> is a simple & minimalistic theme for <a href="http://jekyllrb.com">Jekyll</a>, a static site generator.</p>
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
-
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
-
-
-[jekyll-organization]: https://github.com/jekyll
+>Designed and developed by [@thinker3197](https://github.com/thinker3197).
