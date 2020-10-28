@@ -289,8 +289,8 @@ qplot( data = dt.ceo.salaries
 ```
 
     ## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
-
-![](Homework-2-JS_files/figure-gfm/hist%20sal-1.png)<!-- -->
+    
+![hist sal-1](https://user-images.githubusercontent.com/73550706/97409096-01222080-18f5-11eb-8de9-a29472b629bb.png)<!-- -->
 
 **Age**
 
@@ -301,8 +301,8 @@ qplot( data = dt.ceo.salaries
 ```
 
     ## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
-
-![](Homework-2-JS_files/figure-gfm/hist%20age-1.png)<!-- -->
+    
+![hist age-1](https://user-images.githubusercontent.com/73550706/97409054-efd91400-18f4-11eb-9db8-9350778e322d.png)<!-- -->
 
 ### Scatterplot
 
@@ -323,7 +323,7 @@ qplot( data = dt.ceo.salaries
        , geom = "bar")
 ```
 
-![](Homework-2-JS_files/figure-gfm/bar-1.png)<!-- -->
+![bar-1](https://user-images.githubusercontent.com/73550706/97408850-9e308980-18f4-11eb-90c6-c00c79725c51.png)<!-- -->
 
 ### Line
 
@@ -334,7 +334,7 @@ qplot( data = dt.ceo.salaries
        , geom = "line")
 ```
 
-![](Homework-2-JS_files/figure-gfm/line-1.png)<!-- -->
+![line-1](https://user-images.githubusercontent.com/73550706/97408780-80fbbb00-18f4-11eb-8b87-a8f0b730c10a.png)<!-- -->
 
 ### Facet Wrap
 
@@ -346,7 +346,7 @@ qplot( data = dt.ceo.salaries
 
     ## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
 
-![](Homework-2-JS_files/figure-gfm/facet%20wrap-1.png)<!-- -->
+![facet wrap-1](https://user-images.githubusercontent.com/73550706/97409004-d768f980-18f4-11eb-9217-b4bc3031ab56.png)<!-- -->
 
 ### Customising plots:
 
@@ -368,5 +368,5 @@ qplot( data = dt.ceo.salaries
     ## Warning: Removed 1 rows containing non-finite values (stat_bin).
 
     ## Warning: Removed 4 rows containing missing values (geom_bar).
-
-![](https://github.com/JanSiriwardana/jansiriwardana.github.io/_posts/figure-gfm/custom_sal-1.png)<!-- -->
+    
+![custom_sal-1](https://user-images.githubusercontent.com/73550706/97408946-c1f3cf80-18f4-11eb-919e-7813d4509f91.png)<!-- -->
