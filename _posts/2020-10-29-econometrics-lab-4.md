@@ -706,7 +706,7 @@ For instance, the coefficient 508.129 of the variable *locationFar*
 tells you that, on average, people who are “far” spend more than people
 who are “close”.
 
-### Predicet amount spent by new customer
+### Predict amount spent by new customer
 
 Now lets predict the amount spent for a new customer:
 
