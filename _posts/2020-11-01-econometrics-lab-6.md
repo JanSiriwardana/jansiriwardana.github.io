@@ -714,7 +714,8 @@ size and R-squared.**
 
 ![equation](https://latex.codecogs.com/gif.latex?math10%3D%20-69.341%20+%2011.164%5Clog%28expend%29)
 
-Sample size = 408 Rsquared = 0.030
+Sample size = 408 
+Rsquared = 0.030
 
 **v) How big is the estimated spending effect? Namely, if spending
 increases by 10%, what is the estimated percentage point increase in
