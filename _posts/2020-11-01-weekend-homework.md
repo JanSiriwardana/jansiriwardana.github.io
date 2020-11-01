@@ -128,7 +128,7 @@ Are they equal?**
 No the sample means are not equal
 
 **iii)Follow the steps for illustrating the Central Limit Theorem using
-a Poisson and a uniform distribution. **\*
+a Poisson and a uniform distribution. **
 
     unif.10 <- data.table(replicate(n=10000, runif(10)))
     mean.unif.10 <- colMeans(unif.10)
