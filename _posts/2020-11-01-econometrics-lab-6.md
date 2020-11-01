@@ -313,7 +313,7 @@ effect? Explain.**
     ## 0.003566069
 
 The coefficient for profit is 0.00004 which means that a $1m increase in
-profits increases CEO salary by 0.004%
+profits increases CEO salary by 0.004%. The p-value is very large so profit is not significant. 
 
 **v) Add the variable ceoten and comten to the model in part (ii). What
 is the estimated percentage return for another year of CEO tenure,
