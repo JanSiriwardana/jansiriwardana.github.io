@@ -4,6 +4,41 @@ title:  "Weekend Homework"
 date:   2020-11-01 09:30:00
 categories: jekyll update
 ---
+Part B: Formal Exercises
+-----
+
+E.1 For any constant 
+![equation](https://latex.codecogs.com/gif.latex?E%28c%29%20%3D%20c)
+
+E.2 For any constants *a* and *b* ![equation](https://latex.codecogs.com/gif.latex?E%28aX%20&plus;%20b%29%20%3D%20aE%28X%29%20&plus;%20b)
+
+E.3 If ![equation](https://latex.codecogs.com/gif.latex?%5C%7Ba_1%2Ca_2%2C...%2Ca_n%5C%7D) are constants and ![equation](https://latex.codecogs.com/gif.latex?%5C%7BX_1%2CX_2%2C...%2CX_n%5C%7D) are random variables, then: ![equation](https://latex.codecogs.com/gif.latex?E%28a_1X_1%20&plus;%20a_2X_2%20&plus;%20...%20&plus;%20a_nX_n%29%20%3D%20a_1E%28X_1%29%20&plus;%20a_2E%28X_2%29%20&plus;%20...%20&plus;%20a_nE%28X_n%29)
+
+V.1 For any constants *a* and *b* ![equation](https://latex.codecogs.com/gif.latex?Var%28aX%20&plus;%20b%29%20%3D%20a%5E2%20Var%28X%29.)
+
+**Linear projection coefficient as best linear predictor**
+
+![equation](https://latex.codecogs.com/gif.latex?%5Cbegin%7Balign*%7D%20%5Chat%5Cbeta%20%26%3D%20%5Carg%20%5Cmin_%7B%5Cbeta%5Cin%5Cmathbb%7BR%7D%5EK%7D%20%5Ctext%7BE%7D%28%5By-%5Ctextbf%7Bx%7D%27%5Cbeta%5D%5E2%29%20%5C%5C%20S%28%5Cbeta%29%20%26%3D%20%5Ctext%7BE%7D%28%5By-%5Ctextbf%7Bx%7D%27%5Cbeta%5D%5E2%29%5C%5C%20%26%3D%20%5Ctext%7BE%7D%28y%5E2%29-2%5Cbeta%27%20%5Ctext%7BE%7D%28%5Ctextbf%7Bx%7Dy%29%20&plus;%20%5Cbeta%27%5Ctext%7BE%7D%28%5Ctextbf%7Bxx%7D%27%29%5Cbeta%5C%5C%20%5Cfrac%7B%5Cpartial%20S%28%5Cbeta%29%7D%7B%5Cpartial%5Cbeta%7D%20%26%3D%20-2%5Ctext%7BE%7D%28%5Ctextbf%7Bxy%7D%29%20&plus;%202%5Ctext%7BE%7D%28%5Ctextbf%7Bxx%7D%27%29%5Cbeta%20%3D%200%5C%5C%20%5Cbeta%20%26%3D%20%28%5Ctext%7BE%7D%28%5Ctextbf%7Bxx%7D%27%29%29%5E%7B-1%7D%5Ctext%7BE%7D%28%5Ctextbf%7Bx%7Dy%29%20%5Cend%7Balign*%7D)
+
+**Deriving the OLS-estimator in the sample analogue**
+
+![equation](https://latex.codecogs.com/gif.latex?%5Cbegin%7Balign*%7D%20%5Chat%5Cbeta%20%26%3D%20%5Carg%20%5Cmin%20%5Cfrac%7B1%7D%7Bn%7D%5Csum%5En_%7Bi%3D1%7D%28y_i-x%27_i%5Cbeta%29%5E2%20%5C%5C%20%26%3D%20%5Carg%5Cmin%20%5Cfrac%7B1%7D%7Bn%7D%5Csum%5En_%7Bi%3D1%7D%5B%28y_i-x%27_i%5Cbeta%29%28y_i-x%27_i%5Cbeta%29%27%5D%20%5C%5C%20%26%3D%20%5Carg%5Cmin%20%28%5Cfrac%7B1%7D%7Bn%7D%5Csum%5En_%7Bi%3D1%7D%20y_iy_i%27%29%20-%202%5Cbeta%20%28%5Cfrac%7B1%7D%7Bn%7D%20%5Csum%5En_%7Bi%3D1%7Dx_i%27y_i%29%20&plus;%20%5Cbeta%5E2%20%28%5Cfrac%7B1%7D%7Bn%7D%20%5Csum%5En_%7Bi%3D1%7D%20x_ix_i%27%29%20%5C%5C%20%5Cfrac%7B%5Cpartial%20%28%5Ccdot%29%7D%7B%5Cpartial%5Cbeta%7D%20%26%3D%20-2%28%5Cfrac%7B1%7D%7Bn%7D%5Csum%5En_%7Bi%3D1%7Dx_i%27y_i%29%20&plus;%202%5Cbeta%28%5Cfrac%7B1%7D%7Bn%7D%5Csum%5En_%7Bi%3D1%7D%20x_ix_i%27%29%20%3D%200%5C%5C%20%5Cbeta%20%28%5Cfrac%7B1%7D%7Bn%7D%20%5Csum%5En_%7Bi%3D1%7D%20x_ix_i%27%29%20%26%3D%20%28%5Cfrac%7B1%7D%7Bn%7D%5Csum%5En_%7Bi%3D1%7Dx_i%27y_i%29%5C%5C%20%5Chat%5Cbeta%20%26%3D%20%28%5Cfrac%7B1%7D%7Bn%7D%5Csum%5En_%7Bi%3D1%7D%20x_ix_i%27%20%29%5E%7B-1%7D%20%28%5Cfrac%7B1%7D%7Bn%7D%5Csum%5En_%7Bi%3D1%7Dx_i%27y_i%29%20%5Cend%7Balign*%7D)
+
+**Proof of unbiasedness**
+
+![equation] (https://latex.codecogs.com/gif.latex?%5Cbegin%7Balign*%7D%20%5Ctext%7BE%7D%28%5Chat%5Cbeta%7C%5Ctextbf%7BX%7D%29%20%26%3D%20%5Ctext%7BE%7D%28%28%5Ctextbf%7BX%7D%27%5Ctextbf%7BX%7D%29%5E%7B-1%7D%5Ctextbf%7BX%7D%27%5Ctextbf%7By%7D%7C%5Ctextbf%7BX%7D%29%5C%5C%20%26%3D%20%28%5Ctextbf%7BX%7D%27%5Ctextbf%7BX%7D%29%5E%7B-1%7D%5Ctextbf%7BX%7D%27%5Ctext%7BE%7D%28%5Ctextbf%7By%7D%7C%5Ctextbf%7BX%7D%29%20%5C%5C%20%26%3D%20%28%5Ctextbf%7BX%7D%27%5Ctextbf%7BX%7D%29%5E%7B-1%7D%5Ctextbf%7BX%7D%27%5Ctextbf%7BX%7D%5Cbeta%20&plus;%20%28%5Ctextbf%7BX%7D%27%5Ctextbf%7BX%7D%29%5E%7B-1%7D%5Ctextbf%7BX%7D%27%5Ctext%7BE%7D%28%5Ctextbf%7Bu%7D%7C%5Ctextbf%7BX%7D%29%20%5C%5C%20%26%3D%20%5Cbeta%20%5Cend%7Balign*%7D)
+
+By law of iterated expectations
+
+![equation] (https://latex.codecogs.com/gif.latex?%5Cbegin%7Balign*%7D%20%5Ctext%7BE%7D%28%5Chat%5Cbeta%29%20%26%3D%20%5Ctext%7BE%7D%28%5Ctext%7BE%7D%28%5Chat%5Cbeta%7C%5Ctextbf%7BX%7D%29%29%20%5C%5C%20%26%3D%20%5Cbeta%20%5Cend%7Balign*%7D)
+
+When ![equation](https://latex.codecogs.com/gif.latex?%5Cbegin%7Balign*%7D%20%5Ctext%7BE%7D%28%5Ctextbf%7Bu%7D%7C%5Ctextbf%7BX%7D%29%3D2%20%5Cend%7Balign*%7D)
+
+![equation](https://latex.codecogs.com/gif.latex?%5Cbegin%7Balign*%7D%20%5Ctext%7BE%7D%28%5Chat%5Cbeta%7C%5Ctextbf%7BX%7D%29%20%26%3D%20%5Cbeta%20&plus;%202%20%28%5Ctextbf%7BX%7D%27%5Ctextbf%7BX%7D%29%5E%7B-1%7D%5Ctextbf%7BX%7D%27%20%5Cend%7Balign*%7D)
+
+Instructions for Programming
+-----
+
 Setup
 -----
 
