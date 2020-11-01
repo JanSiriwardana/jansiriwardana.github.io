@@ -26,11 +26,11 @@ V.1 For any constants *a* and *b* ![equation](https://latex.codecogs.com/gif.lat
 
 **Proof of unbiasedness**
 
-![equation] (https://latex.codecogs.com/gif.latex?%5Cbegin%7Balign*%7D%20%5Ctext%7BE%7D%28%5Chat%5Cbeta%7C%5Ctextbf%7BX%7D%29%20%26%3D%20%5Ctext%7BE%7D%28%28%5Ctextbf%7BX%7D%27%5Ctextbf%7BX%7D%29%5E%7B-1%7D%5Ctextbf%7BX%7D%27%5Ctextbf%7By%7D%7C%5Ctextbf%7BX%7D%29%20%5C%5C%20%26%3D%20%28%5Ctextbf%7BX%7D%27%5Ctextbf%7BX%7D%29%5E%7B-1%7D%5Ctextbf%7BX%7D%27%5Ctext%7BE%7D%28%5Ctextbf%7By%7D%7C%5Ctextbf%7BX%7D%29%20%5C%5C%20%26%3D%20%28%5Ctextbf%7BX%7D%27%5Ctextbf%7BX%7D%29%5E%7B-1%7D%5Ctextbf%7BX%7D%27%5Ctextbf%7BX%7D%29%5Cbeta%20&plus;%20%28%5Ctextbf%7BX%7D%27%5Ctextbf%7BX%7D%29%5E%7B-1%7D%5Ctextbf%7BX%7D%27%5Ctext%7BE%7D%28%5Ctextbf%7Bu%7D%7C%5Ctextbf%7BX%7D%29%20%5C%5C%20%26%3D%20%5Cbeta%20%5Cend%7Balign*%7D)
+![equation](https://latex.codecogs.com/gif.latex?%5Cbegin%7Balign*%7D%20%5Ctext%7BE%7D%28%5Chat%5Cbeta%7C%5Ctextbf%7BX%7D%29%20%26%3D%20%5Ctext%7BE%7D%28%28%5Ctextbf%7BX%7D%27%5Ctextbf%7BX%7D%29%5E%7B-1%7D%5Ctextbf%7BX%7D%27%5Ctextbf%7By%7D%7C%5Ctextbf%7BX%7D%29%20%5C%5C%20%26%3D%20%28%5Ctextbf%7BX%7D%27%5Ctextbf%7BX%7D%29%5E%7B-1%7D%5Ctextbf%7BX%7D%27%5Ctext%7BE%7D%28%5Ctextbf%7By%7D%7C%5Ctextbf%7BX%7D%29%20%5C%5C%20%26%3D%20%28%5Ctextbf%7BX%7D%27%5Ctextbf%7BX%7D%29%5E%7B-1%7D%5Ctextbf%7BX%7D%27%5Ctextbf%7BX%7D%29%5Cbeta%20&plus;%20%28%5Ctextbf%7BX%7D%27%5Ctextbf%7BX%7D%29%5E%7B-1%7D%5Ctextbf%7BX%7D%27%5Ctext%7BE%7D%28%5Ctextbf%7Bu%7D%7C%5Ctextbf%7BX%7D%29%20%5C%5C%20%26%3D%20%5Cbeta%20%5Cend%7Balign*%7D)
 
 By law of iterated expectations
 
-![equation] (https://latex.codecogs.com/gif.latex?%5Cbegin%7Balign*%7D%20%5Ctext%7BE%7D%28%5Chat%5Cbeta%29%20%26%3D%20%5Ctext%7BE%7D%28%5Ctext%7BE%7D%28%5Chat%5Cbeta%7C%5Ctextbf%7BX%7D%29%29%20%5C%5C%20%26%3D%20%5Cbeta%20%5Cend%7Balign*%7D)
+![equation](https://latex.codecogs.com/gif.latex?%5Cbegin%7Balign*%7D%20%5Ctext%7BE%7D%28%5Chat%5Cbeta%29%20%26%3D%20%5Ctext%7BE%7D%28%5Ctext%7BE%7D%28%5Chat%5Cbeta%7C%5Ctextbf%7BX%7D%29%29%20%5C%5C%20%26%3D%20%5Cbeta%20%5Cend%7Balign*%7D)
 
 When ![equation](https://latex.codecogs.com/gif.latex?%5Cbegin%7Balign*%7D%20%5Ctext%7BE%7D%28%5Ctextbf%7Bu%7D%7C%5Ctextbf%7BX%7D%29%3D2%20%5Cend%7Balign*%7D)
 
