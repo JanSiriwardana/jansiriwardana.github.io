@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Econometrics Lab 6"
-date:   2020-10-29 
+date:   2020-11-01 11:00:00
 categories: jekyll update
 ---
 
