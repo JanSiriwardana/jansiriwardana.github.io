@@ -456,11 +456,11 @@ does this say about the OLS estimators?**
     ## [1] 0.7768976
 
 The two variables are quite highly correlated. Typically this is not too
-much of an issue unless this linear dependence is very close to 1 or
+much of an issue for the predictive power of the model unless this linear dependence is very close to 1 or
 equal to 1 such that there is perfect multicollinearity. In this case
 rank(X) &lt; k so X’X is invertible and
 ![equation](https://latex.codecogs.com/gif.latex?%5Chat%5Cbeta) cannot
-be computed.
+be computed. However, multicollinearity can result in invalid results for the coefficients of the individual regressors.
 
 Exercise 3
 ----------
