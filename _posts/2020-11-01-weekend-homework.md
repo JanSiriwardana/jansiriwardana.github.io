@@ -36,6 +36,8 @@ When ![equation](https://latex.codecogs.com/gif.latex?%5Cbegin%7Balign*%7D%20%5C
 
 ![equation](https://latex.codecogs.com/gif.latex?%5Cbegin%7Balign*%7D%20%5Ctext%7BE%7D%28%5Chat%5Cbeta%7C%5Ctextbf%7BX%7D%29%20%26%3D%20%5Cbeta%20&plus;%202%20%28%5Ctextbf%7BX%7D%27%5Ctextbf%7BX%7D%29%5E%7B-1%7D%5Ctextbf%7BX%7D%27%20%5Cend%7Balign*%7D)
 
+Thus we systematically underestimate the dependent variable in the model. Since the expected conditional mean error is a constant however, if we add 2 to our constant term and subtract 2 from u so that the new expected conditional mean is zero, then the new intercept will be 2 + ![equation](https://latex.codecogs.com/gif.latex?%5Cbeta_0) and the slope coefficient will remain the same.
+
 Instructions for Programming
 -----
 
