@@ -3,6 +3,7 @@ layout: post
 title:  "Econometrics Lab 4"
 date:   2020-10-29 
 categories: jekyll update
+comment_issue_id: 39 
 ---
 
 Homework 4
