@@ -54,8 +54,8 @@ Set working directory and activate necessary packages
 
     library(sandwich)
 
-When ![equation](https://latex.codecogs.com/gif.latex?%5Cdelta%20%3D0),
-![equation](https://latex.codecogs.com/gif.latex?%5Ctilde%5Cbeta_1%3D%5Chat%5Cbeta_1)
+**When ![equation](https://latex.codecogs.com/gif.latex?%5Cdelta%20%3D0),
+![equation](https://latex.codecogs.com/gif.latex?%5Ctilde%5Cbeta_1%3D%5Chat%5Cbeta_1)**
 
 Simulate x variables
 
@@ -106,11 +106,11 @@ Output
     ## ==========================================
     ## Note:          *p<0.1; **p<0.05; ***p<0.01
 
-When
+**When
 ![equation](https://latex.codecogs.com/gif.latex?%5Cdelta%20%5Cneq0),
 ![equation](https://latex.codecogs.com/gif.latex?%5Ctilde%5Cbeta_1%5Cneq%5Chat%5Cbeta_1)
 because
-![equation](https://latex.codecogs.com/gif.latex?Cor%28x_1%2Cx_2%29%5Cneq0)
+![equation](https://latex.codecogs.com/gif.latex?Cor%28x_1%2Cx_2%29%5Cneq0)**
 
 Simulate x variables
 
