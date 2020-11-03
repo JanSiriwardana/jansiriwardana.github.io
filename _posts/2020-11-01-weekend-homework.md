@@ -292,6 +292,8 @@ testing
     ## mean in group 0 mean in group 1 
     ##        7.099489        4.587659
 
+The p-value is extremely small so we can reject the null hypothesis that wages are the same. There is evidence to suggest that avergae wages for men and women are different. 
+
 Similarly, to see if wages are different for whites and non-whites
 
     dt.wages1[, t.test (wage ~ nonwhite)]
@@ -307,3 +309,5 @@ Similarly, to see if wages are different for whites and non-whites
     ## sample estimates:
     ## mean in group 0 mean in group 1 
     ##        5.944174        5.475926
+
+Now the p-value > 0.05 so we cannot reject the null hypothesis. From our data we cannot say that wages are different for whites and non-whites.
