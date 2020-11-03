@@ -3,7 +3,7 @@ layout: post
 title:  "Weekend Homework"
 date:   2020-11-01 09:30:00
 categories: jekyll update
-comment_issu_id: 8 
+comment_issue_id: 8 
 ---
 Part B: Formal Exercises
 -----
