@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Econometrics Lab 2"
+title:  "Econometrics Lab 3"
 date:   2020-10-28 
 categories: jekyll update
 comment_issue_id: 45 
