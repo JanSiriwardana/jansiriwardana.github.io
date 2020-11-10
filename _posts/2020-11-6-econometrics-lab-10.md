@@ -3,7 +3,7 @@ layout: post
 title:  "Econometrics Lab 10"
 date:   2020-11-06 11:00:00
 categories: jekyll update
-comment_issue_id: 41
+comment_issue_id: 42
 ---
 
     setwd("~/Desktop/R WD")
