@@ -312,7 +312,7 @@ It may be reasonable to assume that the treatment effects is in fact heterogeneo
 
 **ATET estimate**
 
-![equation1] (https://latex.codecogs.com/gif.latex?%5Cbeta_%7BATET%7D%3D%5Cbeta_1%20&plus;%20E%5Bb%28X_%7Bit%7D%29%7CD_%7Bit%7D%3D1%5D) where the second part is the expected value of the covariate, given the individual was treated, multiplied by the coefficient on the corresponding interaction variable.
+![equation1](https://latex.codecogs.com/gif.latex?%5Cbeta_%7BATET%7D%3D%5Cbeta_1%20&plus;%20E%5Bb%28X_%7Bit%7D%29%7CD_%7Bit%7D%3D1%5D) where the second part is the expected value of the covariate, given the individual was treated, multiplied by the coefficient on the corresponding interaction variable.
 
     summary(RA)$coefficients[2,1] + (south.nonwhite*summary(RA)$coefficients[5,1]) + (south.female*summary(RA)$coefficients[6,1])
 
