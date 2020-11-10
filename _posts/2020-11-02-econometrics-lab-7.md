@@ -3,7 +3,7 @@ layout: post
 title:  "Econometrics Lab 7"
 date:   2020-11-02 11:00:00
 categories: jekyll update
-comment_issue_id: 40 
+comment_issue_id: 48
 ---
 
 ##Setup
