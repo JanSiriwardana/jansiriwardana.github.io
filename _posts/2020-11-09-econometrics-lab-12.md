@@ -317,7 +317,7 @@ Taking z_i as the vector of exogenous variables we can write the moment conditio
 
 If E(z'x) has full rank then above equation has unique solution
 
-![equation] (https://latex.codecogs.com/gif.latex?%5Cbeta%20%3D%20%28E%28%5Ctextbf%7Bz%7D_i%5Ctextbf%7Bx%7D%27_i%29%29%5E%7B-1%7DE%28%5Ctextbf%7Bz%7D_iy_i%29)
+![equation](https://latex.codecogs.com/gif.latex?%5Cbeta%20%3D%20%28E%28%5Ctextbf%7Bz%7D_i%5Ctextbf%7Bx%7D%27_i%29%29%5E%7B-1%7DE%28%5Ctextbf%7Bz%7D_iy_i%29)
 
 Method of moments estimator replaces these population moments with sample moments
 
